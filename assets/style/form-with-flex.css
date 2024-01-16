@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", sans-serif;
+}
+:root {
+  --size-input: 10px;
+}
+
+/* div{
+  border: 1px solid red;
+} */
+
+.container {
+  outline: 1px solid black;
+  width: 550px;
+  height: 650px;
+  color: white;
+  background-color: #3ea9f5;
+}
+
+.header-main {
+  margin-top: -10px;
+}
+
+.header-slogan {
+  width: 70%;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.elem-form {
+  margin: 20px;
+}
+
+input[type="text"],
+[type="email"],
+[type="password"] {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  height: 50px;
+  width: 235px;
+  padding-left: 20px;
+}
+
+.input-radio-block {
+  border: 1px solid white;
+  margin: 10px 20px 10px 20px;
+}
+
+.radio-header > label {
+  font-size: 20px;
+  margin-top: 10px ;
+}
+
+.radio-header > p {
+  font-size: 12px;
+}
+
+.check-box-block {
+  font-size: 14px;
+}
+
+.button {
+  padding: 15px 170px;
+  margin: 20px 45px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  text-decoration: solid;
+  background: #28d2d0;
+}
+
+/* Flex properties */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-radio-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.radio-button {
+  margin: 10px;
+}
+
+.radio-header {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+}
+
+.check-box-block {
+  display: flex;
+  justify-content: center;
+}
+
+.button-block{
+  display: flex;
+  justify-content: center;
+}
