@@ -11,11 +11,20 @@
 } */
 
 .container {
+  display: flex;
+  flex-direction: column;
   outline: 1px solid black;
   width: 550px;
   height: 650px;
   color: white;
   background-color: #3ea9f5;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-main {
@@ -25,11 +34,19 @@
 .header-slogan {
   width: 70%;
   margin-top: -30px;
+  /* font-weight: 550; */
   text-align: center;
 }
 
 .elem-form {
-  margin: 20px;
+  margin-bottom: 15px;
+}
+
+.input-text-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 input[type="text"],
@@ -37,19 +54,31 @@ input[type="text"],
 [type="password"] {
   border: 1px solid #cccccc;
   border-radius: 3px;
-  height: 50px;
-  width: 235px;
+  height: 60px;
+  width: 245px;
   padding-left: 20px;
 }
 
 .input-radio-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   border: 1px solid white;
   margin: 10px 20px 10px 20px;
 }
 
+.radio-button {
+  margin: 10px;
+}
+
+.radio-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .radio-header > label {
   font-size: 20px;
-  margin-top: 10px ;
+  margin-top: 10px;
 }
 
 .radio-header > p {
@@ -57,7 +86,14 @@ input[type="text"],
 }
 
 .check-box-block {
+  display: flex;
+  justify-content: center;
   font-size: 14px;
+}
+
+.button-block {
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -72,51 +108,4 @@ input[type="text"],
   border-radius: 5px;
   text-decoration: solid;
   background: #28d2d0;
-}
-
-/* Flex properties */
-
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.input-text-block {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.input-radio-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.radio-button {
-  margin: 10px;
-}
-
-.radio-header {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: start; */
-}
-
-.check-box-block {
-  display: flex;
-  justify-content: center;
-}
-
-.button-block{
-  display: flex;
-  justify-content: center;
 }
